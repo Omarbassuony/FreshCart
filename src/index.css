@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row
+{
+    @apply flex flex-wrap py-5 items-center px-4;
+}
+
+.btn{
+    @apply px-4 py-2 w-full rounded-lg text-white bg-green-600 
+}
+
+.product .btn
+{
+    transition: transform 1s ,opacity 1s;
+    transform: translateY(100%);
+    opacity:0;
+}
+.product:hover .btn
+{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.col
+{
+    transition: all 0.5s;
+}
+.col:hover
+{
+    box-shadow: 1px 1px 10px #4fa74f;
+}
