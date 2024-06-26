@@ -109,10 +109,10 @@ export default function Cart() {
           ))}
           {cartDetails?.data?.products?.length > 0 ? (
             <tr className="bg-white border-b">
-            <td colSpan="3" className="px-4 sm:px-6 py-4 font-semibold md:text-lg text-sm text-gray-900 dark:text-white text-center">
+            <td colSpan="3" className="px-4 sm:px-6 py-4 font-semibold md:text-lg text-sm text-black text-center">
             total number of items : <span className='text-green-600'>{cartDetails?.numOfCartItems}</span> 
             </td>
-            <td colSpan="3" className="px-4 sm:px-6 py-4 font-semibold md:text-lg text-sm text-gray-900 dark:text-white text-center">
+            <td colSpan="3" className="px-4 sm:px-6 py-4 font-semibold md:text-lg text-sm text-black  text-center">
             total price : <span className='text-green-600'>{cartDetails?.data?.totalCartPrice}</span> EGP
             </td>
 

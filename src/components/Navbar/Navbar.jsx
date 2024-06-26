@@ -39,13 +39,13 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className='bg-gray-100 fixed top-0 left-0 right-0 z-50'>
+        <nav className='bg-gray-100 fixed top-0 left-0 right-0 z-50 px-7 md:px-0'>
             <div className="container mx-auto py-4 flex justify-between items-center">
                 <div className='flex items-center'>
                     <img src={logo} width={120} alt="fresh cart logo" />
                 </div>
                 <div className="flex items-center justify-center flex-grow">
-                    {userLogin && <span className="text-green-600 font-semibold">Welcome, {userName}</span>}
+                    {userLogin && <span className="text-green-600 font-semibold text-[15px] md:text-lg">Welcome, {userName}</span>}
                 </div>
                 <div className="flex items-center lg:hidden">
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-2xl focus:outline-none">
@@ -56,7 +56,7 @@ export default function Navbar() {
                     {userLogin && (
                         <>
                             <li className='text-md mx-4 text-slate-900 font-normal'>
-                                <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'hover:text-green-600'} to={"/FreshCart"}>Home</NavLink>
+                                <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'hover:text-green-600'} to={"/"}>Home</NavLink>
                             </li>
                             <li className='text-md mx-4 text-slate-900 font-normal'>
                                 <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'hover:text-green-600'} to={'/products'}>Products</NavLink>
@@ -118,7 +118,7 @@ export default function Navbar() {
                         {userLogin && (
                             <>
                                 <li className='text-md my-2 text-slate-900 font-normal'>
-                                    <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'py-2 px-5 hover:text-green-600'} to={"/FreshCart"} onClick={() => setIsMenuOpen(false)}>Home</NavLink>
+                                    <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'py-2 px-5 hover:text-green-600'} to={"/"} onClick={() => setIsMenuOpen(false)}>Home</NavLink>
                                 </li>
                                 <li className='text-md my-2 text-slate-900 font-normal'>
                                     <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'py-2 px-5 hover:text-green-600'} to={'/products'} onClick={() => setIsMenuOpen(false)}>Products</NavLink>

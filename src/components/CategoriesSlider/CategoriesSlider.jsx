@@ -62,7 +62,7 @@ export default function CategoriesSlider() {
         {data?.data.data.map((category) => (
           <Link to="/categories" key={category._id} className='p-5 sm:p-0'>
             <div className='my-4'>
-              <img className='w-full h-[250px]' src={category?.image} alt={category?.name} />
+              <img className='w-full md:h-[150px] h-[250px]' src={category?.image} alt={category?.name} />
               <h3 className='font-light mt-2'>{category?.name}</h3>
             </div>
           </Link>
