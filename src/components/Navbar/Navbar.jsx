@@ -56,7 +56,7 @@ export default function Navbar() {
                     {userLogin && (
                         <>
                             <li className='text-md mx-4 text-slate-900 font-normal'>
-                                <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'hover:text-green-600'} to={'/'}>Home</NavLink>
+                                <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'hover:text-green-600'} to={"/FreshCart"}>Home</NavLink>
                             </li>
                             <li className='text-md mx-4 text-slate-900 font-normal'>
                                 <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'hover:text-green-600'} to={'/products'}>Products</NavLink>
@@ -118,7 +118,7 @@ export default function Navbar() {
                         {userLogin && (
                             <>
                                 <li className='text-md my-2 text-slate-900 font-normal'>
-                                    <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'py-2 px-5 hover:text-green-600'} to={'/'} onClick={() => setIsMenuOpen(false)}>Home</NavLink>
+                                    <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'py-2 px-5 hover:text-green-600'} to={"/FreshCart"} onClick={() => setIsMenuOpen(false)}>Home</NavLink>
                                 </li>
                                 <li className='text-md my-2 text-slate-900 font-normal'>
                                     <NavLink className={({ isActive }) => isActive ? 'text-white bg-green-600 py-2 px-5 rounded-lg' : 'py-2 px-5 hover:text-green-600'} to={'/products'} onClick={() => setIsMenuOpen(false)}>Products</NavLink>

@@ -41,7 +41,7 @@ export default function CheckOut() {
   }
 
   function createOnlineOrder(values) {
-    axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cart.data.data._id}?url=http://localhost:5173`, values, { headers })
+    axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cart.data.data._id}?url=https://omarbassuony.github.io/FreshCart/`, values, { headers })
       .then(response => {
         console.log(response.data.status);
         if (response.data.status == "success") {

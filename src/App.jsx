@@ -29,7 +29,7 @@ let query = new QueryClient();
 
 let router = createBrowserRouter([
   {path:'' , element:<Layout/> , children:[
-    {index:true , element: <ProtectedRoute><Home/></ProtectedRoute>},
+    {index:true ,path:"/FreshCart", element: <ProtectedRoute><Home/></ProtectedRoute>},
     {path:'products' , element: <ProtectedRoute><Products/></ProtectedRoute>},
     {path:'productdetails/:id' , element: <ProtectedRoute><ProductDetails/></ProtectedRoute>},
     {path:'cart' , element:<ProtectedRoute><Cart/></ProtectedRoute>},
