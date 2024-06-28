@@ -79,12 +79,12 @@ export default function CheckOut() {
   });
 
   return (
-    <div className="container flex flex-col items-center justify-center py-24">
+    <div className="container flex flex-col items-center justify-center py-24 px-4 sm:px-6 lg:px-8">
       <h2 className="text-2xl font-bold mb-3 text-green-600">Shipping Address</h2>
-      <form className="flex flex-col gap-4" onSubmit={formik.handleSubmit}>
+      <form className="flex flex-col gap-4 w-full md:w-[800px]" onSubmit={formik.handleSubmit}>
         <input
           placeholder="City"
-          className="w-[800px] rounded-md bg-gray-50 outline-none border border-gray-400 border-opacity-50 px-3 py-1 focus:outline-none focus:ring-0 focus:border-green-600 focus:drop-shadow-md"
+          className="md:w-[800px] rounded-md bg-gray-50 outline-none border border-gray-400 border-opacity-50 px-3 py-1 focus:outline-none focus:ring-0 focus:border-green-600 focus:drop-shadow-md"
           type="text"
           name="shippingAddress.city"
           value={formik.values.shippingAddress.city}
@@ -97,7 +97,7 @@ export default function CheckOut() {
         
         <input
           placeholder="Phone"
-          className="w-[800px] rounded-md bg-gray-50 outline-none border border-gray-400 border-opacity-50 px-3 py-1 focus:outline-none focus:ring-0 focus:border-green-600 focus:drop-shadow-md"
+          className="md:w-[800px] rounded-md bg-gray-50 outline-none border border-gray-400 border-opacity-50 px-3 py-1 focus:outline-none focus:ring-0 focus:border-green-600 focus:drop-shadow-md"
           type="text"
           name="shippingAddress.phone"
           value={formik.values.shippingAddress.phone}
@@ -110,7 +110,7 @@ export default function CheckOut() {
 
         <textarea
           placeholder="Details"
-          className="w-[800px] rounded-md bg-gray-50 outline-none border border-gray-400 border-opacity-50 px-3 py-1 focus:outline-none focus:ring-0 focus:border-green-600 focus:drop-shadow-md"
+          className="md:w-[800px] rounded-md bg-gray-50 outline-none border border-gray-400 border-opacity-50 px-3 py-1 focus:outline-none focus:ring-0 focus:border-green-600 focus:drop-shadow-md"
           name="shippingAddress.details"
           value={formik.values.shippingAddress.details}
           onChange={formik.handleChange}

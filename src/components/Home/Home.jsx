@@ -7,7 +7,10 @@ import MainSlider from '../MainSlider/MainSlider';
 
 
 export default function Home() {
-
+if (!sessionStorage.getItem('reloaded')) {
+sessionStorage.setItem('reloaded', 'true');
+window.location.reload();
+}
   return <>
   <div className='relative'>
   <MainSlider/>
